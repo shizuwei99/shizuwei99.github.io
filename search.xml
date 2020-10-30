@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<search> 
+  
+  
+    
+    <entry>
+      <title>国干脚本</title>
+      <link href="2020/10/30/guogan/"/>
+      <url>2020/10/30/guogan/</url>
+      
+        <content type="html"><![CDATA[<p>‘==========以下是按键精灵录制的内容==========<br>MoveTo 1651, 1319<br>LeftClick 1<br>Delay 800<br>MoveTo 1146, 607<br>LeftClick 1<br>MoveTo 1162, 636<br>LeftClick 1</p><p>‘==========以下是按键精灵录制的内容==========<br>MoveTo 1211, 648<br>LeftClick 1</p><p>MoveTo 1366, 824<br>LeftClick 1</p><p>MoveTo 1497, 642<br>LeftClick 1</p><p>MoveTo 1779, 837<br>LeftClick 1</p><p>‘==========以上是按键精灵录制的内容==========</p><p>MoveTo 1247, 688<br>LeftClick 1<br>MoveTo 1181, 718<br>LeftClick 1<br>MoveTo 1469, 689<br>LeftClick 1<br>MoveTo 1471, 719<br>LeftClick 1<br>MoveTo 1242, 718<br>LeftClick 1<br>SayString “冯运东”<br>KeyPress “Tab”, 1<br>SayString “史光友”</p><p>‘==========以上是按键精灵录制的内容==========<br>‘==========以下是按键精灵录制的内容==========<br>MoveTo 1291, 820<br>LeftDoubleClick 1<br>Delay 400<br>SayString “有树枝”<br>Delay 400<br>KeyPress “Tab”, 1<br>Delay 400<br>SayString “清除”<br>Delay 400</p><p>//‘==========以下是按键精灵录制的内容==========<br>MoveTo 1324, 855<br>LeftDoubleClick 1</p><p>//‘==========以上是按键精灵录制的内容==========</p><p>Delay 1000<br>SayString “有泥沙”<br>Delay 400<br>KeyPress “Tab”, 1<br>Delay 400<br>SayString “清除”<br>Delay 400<br>//‘==========以下是按键精灵录制的内容==========<br>MoveTo 1313, 1051<br>LeftClick 1<br>Delay 400<br>MoveTo 1296, 794<br>LeftClick 1</p>]]></content>
+      
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>Oracle11g安装教程</title>
+      <link href="2020/10/30/oracleInstall/"/>
+      <url>2020/10/30/oracleInstall/</url>
+      
+        <content type="html"><![CDATA[<h2 id="Oracle-11g-安装教程"><a href="#Oracle-11g-安装教程" class="headerlink" title="Oracle 11g 安装教程"></a>Oracle 11g 安装教程</h2><p>没有下载Oracle11g点击链接前往下载<br><a href="https://www.oracle.com/database/technologies/112010-win64soft.html" target="_blank">Oracle 11g</a></p><h3 id="1、下载两个压缩包"><a href="#1、下载两个压缩包" class="headerlink" title="1、下载两个压缩包"></a>1、下载两个压缩包</h3><p><img src="/2020/10/30/oracleInstall/zip.png"><br>选中这两个压缩包（如果下载不在磁盘不连续，按住ctrl 键 用鼠标点击 就可以把两个压缩包选中了）右键 解压到当前目录<br><img src="/2020/10/30/oracleInstall/unzip.jpg"></p><h3 id="2、解压到当前目录会自动生成一个database文件夹，打开这个文件夹，双击-setup"><a href="#2、解压到当前目录会自动生成一个database文件夹，打开这个文件夹，双击-setup" class="headerlink" title="2、解压到当前目录会自动生成一个database文件夹，打开这个文件夹，双击 setup"></a>2、解压到当前目录会自动生成一个database文件夹，打开这个文件夹，双击 setup</h3><p><img src="/2020/10/30/oracleInstall/setup.png"><br>会弹窗你的环境不满足最低要求，是否继续，选择“是”<br>在“配置安全更新”页面，电子邮件可写可不写，并取消勾选安全更新选项，然后点击下一步</p><h3 id="3、创建和配置数据库-下一步"><a href="#3、创建和配置数据库-下一步" class="headerlink" title="3、创建和配置数据库-下一步"></a>3、创建和配置数据库-下一步</h3><h3 id="4、桌面类-下一步"><a href="#4、桌面类-下一步" class="headerlink" title="4、桌面类-下一步"></a>4、桌面类-下一步</h3><h3 id="5、全局数据库名改为oracle"><a href="#5、全局数据库名改为oracle" class="headerlink" title="5、全局数据库名改为oracle"></a>5、全局数据库名改为oracle</h3><p>管理口令设置简单一点  eg：a</p><h3 id="6、然后一路下一步就完成了"><a href="#6、然后一路下一步就完成了" class="headerlink" title="6、然后一路下一步就完成了"></a>6、然后一路下一步就完成了</h3>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> 安装教程 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>计科常用资源</title>
+      <link href="2020/10/30/notes/"/>
+      <url>2020/10/30/notes/</url>
+      
+        <content type="html"><![CDATA[<h2 id="1、Environment"><a href="#1、Environment" class="headerlink" title="1、Environment"></a>1、Environment</h2><h4 id="1、JDK"><a href="#1、JDK" class="headerlink" title="1、JDK"></a>1、<a href="https://www.oracle.com/java/technologies/javase/javase-jdk8-downloads.html" target="_blank">JDK</a></h4><p>系统变量新建<br>    Java_Home<br>    D:\Environment\Java    –jdk绝对路径<br>    CLASSPATH<br>    .;%JAVA_HOME%\lib\dt.jar;%JAVA_HOME%\lib\tools.jar;<br>path中添加两条:<br>    %JAVA_HOME%\bin<br>    %JAVA_HOME%\jre\bin</p><h4 id="2、Maven（访问码：sd8l）"><a href="#2、Maven（访问码：sd8l）" class="headerlink" title="2、Maven（访问码：sd8l）"></a>2、<a href="https://cloud.189.cn/t/ryY7j27r6Njy" target="_blank">Maven</a>（访问码：sd8l）</h4><p>新建系统变量:<br>    M2_HOME<br>    D:\Environment\apache-maven-3.3.9-bin\apache-maven-3.3.9</p><h4 id="3、Oracle-11g"><a href="#3、Oracle-11g" class="headerlink" title="3、Oracle 11g"></a>3、<a href="https://www.oracle.com/database/technologies/112010-win64soft.html" target="_blank">Oracle 11g</a></h4><h2 id="2、IDE"><a href="#2、IDE" class="headerlink" title="2、IDE"></a>2、IDE</h2><h4 id="1、Oracle图形管理工具"><a href="#1、Oracle图形管理工具" class="headerlink" title="1、Oracle图形管理工具"></a>1、Oracle图形管理工具</h4><p><a herf="https://cloud.189.cn/t/YNFFB3NZZRBj">Plsql Developer</a>（访问码：sgr6）<br>plsql developer 激活码:<br>    ke4tv8t5jtxz493kl8s2nn3t6xgngcmgf3<br>    serial Number: 264452<br>    password: xs374ca</p><h3 id="2、IntelliJ-IDEA-Ultimate2020-2-2-（访问码：u1eq）"><a href="#2、IntelliJ-IDEA-Ultimate2020-2-2-（访问码：u1eq）" class="headerlink" title="2、IntelliJ IDEA Ultimate2020.2.2 （访问码：u1eq）"></a>2、<a href="https://www.jetbrains.com/idea/download/other.html">IntelliJ IDEA Ultimate2020.2.2</a> （访问码：u1eq）</h3><p>破解工具:<a href="https://cloud.189.cn/t/amEZN3ErqqUz" target="_blank">JetBrains2020全家桶破解工具</a>（访问码：u1eq）</p><h2 id="Software"><a href="#Software" class="headerlink" title="Software"></a>Software</h2><h4 id="1、Ediplus（访问码：peh9）"><a href="#1、Ediplus（访问码：peh9）" class="headerlink" title="1、Ediplus（访问码：peh9）"></a>1、<a href="https://cloud.189.cn/t/jy2ENrMBJB7f" target="_blank">Ediplus</a>（访问码：peh9）</h4><p>注册名：zzidc<br>    注册码：11276-E9720-D59E6-BD0E0-2965C</p><h4 id="2、百度网盘破解工具"><a href="#2、百度网盘破解工具" class="headerlink" title="2、百度网盘破解工具"></a>2、百度网盘破解工具</h4><p><a href="https://cloud.189.cn/t/6vAJJnAjEBry" target="_blank">KinhDown</a>（访问码：ikf0）</p><h4 id="4、数电模拟工具"><a href="#4、数电模拟工具" class="headerlink" title="4、数电模拟工具"></a>4、数电模拟工具</h4><p><a href="https://cloud.189.cn/t/7jquQ3QBRFBf" target="_blank">Protues8.6</a>（访问码：u6u5）</p><h4 id="5、按键精灵（访问码：4oey）"><a href="#5、按键精灵（访问码：4oey）" class="headerlink" title="5、按键精灵（访问码：4oey）"></a>5、<a href="https://cloud.189.cn/t/FniMRznYf6j2" target="_blank">按键精灵</a>（访问码：4oey）</h4><h4 id="6、Windows远程工具"><a href="#6、Windows远程工具" class="headerlink" title="6、Windows远程工具"></a>6、Windows远程工具</h4><p><a href="https://cloud.189.cn/t/URZFZbbIZni2" target="_blank">TeamViewer</a>（访问码：l9et）</p><h3 id="7、Windows科学上网工具"><a href="#7、Windows科学上网工具" class="headerlink" title="7、Windows科学上网工具"></a>7、Windows科学上网工具</h3><p><a href="https://cloud.189.cn/t/VZZZjuNRZfQr" target="_blank">Clash</a>（访问码：f44o）</p><h4 id="8、Adobe-Photoshop-CC-2019"><a href="#8、Adobe-Photoshop-CC-2019" class="headerlink" title="8、Adobe Photoshop CC 2019"></a>8、<a href="https://cloud.189.cn/t/6bEnyyeu6Fru" target="_blank">Adobe Photoshop CC 2019</a></h4><p>破解工具:<a href="https://cloud.189.cn/t/nEfMj2jmARfi" target="_blank">adobe.photoshop.cc.2019.20.0.0-patch</a>内含教程</p><h4 id="9、Windows截图工具"><a href="#9、Windows截图工具" class="headerlink" title="9、Windows截图工具"></a>9、Windows截图工具</h4><p><a href target="_blank">Snipaste</a></p><h2 id="3、SoftTools"><a href="#3、SoftTools" class="headerlink" title="3、SoftTools"></a>3、SoftTools</h2><h3 id="1、Git（访问码：2lo6）"><a href="#1、Git（访问码：2lo6）" class="headerlink" title="1、Git（访问码：2lo6）"></a>1、<a href="https://cloud.189.cn/t/Jb2u2aMVzq6b" target="_blank">Git</a>（访问码：2lo6）</h3><h3 id="2、Node-js"><a href="#2、Node-js" class="headerlink" title="2、Node.js"></a>2、<a href target="_blank">Node.js</a></h3>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> 资源 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>chrome下载文件检测到病毒解决办法</title>
+      <link href="2020/10/30/chrome/"/>
+      <url>2020/10/30/chrome/</url>
+      
+        <content type="html"><![CDATA[<p>运行 regedit.exe<br>顺着这个<br>注册表地址HKEY_LOCAL_MACHINE\Software\Microsoft\Windows\CurrentVersion\Policies\Attachments<br>找到这个<br>ScanWithAntiVirus—右键—-修改 为1<br><img src="/2020/10/30/chrome/aa.jpg"><br>问题解决，完美！</p>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> 解决方案 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+  
+  
+</search>
