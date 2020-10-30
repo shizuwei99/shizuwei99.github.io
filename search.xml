@@ -4,6 +4,25 @@
   
     
     <entry>
+      <title>Oracle11g卸载</title>
+      <link href="2020/10/30/uninstallOracle/"/>
+      <url>2020/10/30/uninstallOracle/</url>
+      
+        <content type="html"><![CDATA[<h3 id="1、停用oracle服务："><a href="#1、停用oracle服务：" class="headerlink" title="1、停用oracle服务："></a>1、停用oracle服务：</h3><blockquote><p>进入计算机管理，在服务中，找到oracle开头的所有服务，右击选择停止</p></blockquote><h3 id="2、卸载oracle产品"><a href="#2、卸载oracle产品" class="headerlink" title="2、卸载oracle产品"></a>2、卸载oracle产品</h3><blockquote><p>在开始菜单中，找到Universal Installer，运行Oracle Universal Installer，单击卸载产品<br>在产品清单窗口中，单击全部展开，除了OraDb11g_home1外，勾选其他项目，单击删除</p></blockquote><h3 id="3、删除注册表"><a href="#3、删除注册表" class="headerlink" title="3、删除注册表"></a>3、删除注册表</h3><p>运行 输入regedit，打开注册表</p><blockquote><p>依次展开HKEY_LOCAL_MACHINE\SOFTWARE，找到oracle，删除<br>依次展开HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services中，删除所有oracle开头的项<br>依次展开HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\Eventlog\Application<br>删除所有oracle开头的项<br>在HKEY_CLASSES_ROOT，删除以ora开头的项</p></blockquote><h3 id="4、重启电脑"><a href="#4、重启电脑" class="headerlink" title="4、重启电脑"></a>4、重启电脑</h3><blockquote><p>删除 C:\Program Files\oracle 目录</p></blockquote><h3 id="5、Oracle11g到此就卸载完成"><a href="#5、Oracle11g到此就卸载完成" class="headerlink" title="5、Oracle11g到此就卸载完成"></a>5、Oracle11g到此就卸载完成</h3>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> 教程 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>国干脚本</title>
       <link href="2020/10/30/guogan/"/>
       <url>2020/10/30/guogan/</url>
@@ -21,13 +40,13 @@
       <link href="2020/10/30/oracleInstall/"/>
       <url>2020/10/30/oracleInstall/</url>
       
-        <content type="html"><![CDATA[<h2 id="Oracle-11g-安装教程"><a href="#Oracle-11g-安装教程" class="headerlink" title="Oracle 11g 安装教程"></a>Oracle 11g 安装教程</h2><p>没有下载Oracle11g点击链接前往下载<br><a href="https://www.oracle.com/database/technologies/112010-win64soft.html" target="_blank">Oracle 11g</a></p><h3 id="1、下载两个压缩包"><a href="#1、下载两个压缩包" class="headerlink" title="1、下载两个压缩包"></a>1、下载两个压缩包</h3><p><img src="/2020/10/30/oracleInstall/zip.png"><br>选中这两个压缩包（如果下载不在磁盘不连续，按住ctrl 键 用鼠标点击 就可以把两个压缩包选中了）右键 解压到当前目录<br><img src="/2020/10/30/oracleInstall/unzip.jpg"></p><h3 id="2、解压到当前目录会自动生成一个database文件夹，打开这个文件夹，双击-setup"><a href="#2、解压到当前目录会自动生成一个database文件夹，打开这个文件夹，双击-setup" class="headerlink" title="2、解压到当前目录会自动生成一个database文件夹，打开这个文件夹，双击 setup"></a>2、解压到当前目录会自动生成一个database文件夹，打开这个文件夹，双击 setup</h3><p><img src="/2020/10/30/oracleInstall/setup.png"><br>会弹窗你的环境不满足最低要求，是否继续，选择“是”<br>在“配置安全更新”页面，电子邮件可写可不写，并取消勾选安全更新选项，然后点击下一步</p><h3 id="3、创建和配置数据库-下一步"><a href="#3、创建和配置数据库-下一步" class="headerlink" title="3、创建和配置数据库-下一步"></a>3、创建和配置数据库-下一步</h3><h3 id="4、桌面类-下一步"><a href="#4、桌面类-下一步" class="headerlink" title="4、桌面类-下一步"></a>4、桌面类-下一步</h3><h3 id="5、全局数据库名改为oracle"><a href="#5、全局数据库名改为oracle" class="headerlink" title="5、全局数据库名改为oracle"></a>5、全局数据库名改为oracle</h3><p>管理口令设置简单一点  eg：a</p><h3 id="6、然后一路下一步就完成了"><a href="#6、然后一路下一步就完成了" class="headerlink" title="6、然后一路下一步就完成了"></a>6、然后一路下一步就完成了</h3>]]></content>
+        <content type="html"><![CDATA[<h2 id="Oracle-11g-安装"><a href="#Oracle-11g-安装" class="headerlink" title="Oracle 11g 安装"></a>Oracle 11g 安装</h2><p>没有下载Oracle11g点击链接前往下载<br><a href="https://www.oracle.com/database/technologies/112010-win64soft.html" target="_blank">Oracle 11g</a></p><h3 id="1、下载两个压缩包"><a href="#1、下载两个压缩包" class="headerlink" title="1、下载两个压缩包"></a>1、下载两个压缩包</h3><p><img src="/2020/10/30/oracleInstall/zip.png"><br>选中这两个压缩包（如果下载不在磁盘不连续，按住ctrl 键 用鼠标点击 就可以把两个压缩包选中了）右键 解压到当前目录<br><img src="/2020/10/30/oracleInstall/unzip.jpg"></p><h3 id="2、解压到当前目录会自动生成一个database文件夹，打开这个文件夹，双击-setup"><a href="#2、解压到当前目录会自动生成一个database文件夹，打开这个文件夹，双击-setup" class="headerlink" title="2、解压到当前目录会自动生成一个database文件夹，打开这个文件夹，双击 setup"></a>2、解压到当前目录会自动生成一个database文件夹，打开这个文件夹，双击 setup</h3><p><img src="/2020/10/30/oracleInstall/setup.png"><br>会弹窗你的环境不满足最低要求，是否继续，选择“是”<br>在“配置安全更新”页面，电子邮件可写可不写，并取消勾选安全更新选项，然后点击下一步</p><h3 id="3、创建和配置数据库-下一步"><a href="#3、创建和配置数据库-下一步" class="headerlink" title="3、创建和配置数据库-下一步"></a>3、创建和配置数据库-下一步</h3><h3 id="4、桌面类-下一步"><a href="#4、桌面类-下一步" class="headerlink" title="4、桌面类-下一步"></a>4、桌面类-下一步</h3><h3 id="5、全局数据库名改为oracle"><a href="#5、全局数据库名改为oracle" class="headerlink" title="5、全局数据库名改为oracle"></a>5、全局数据库名改为oracle</h3><p>管理口令设置简单一点  eg：a</p><h3 id="6、然后一路下一步就完成安装过程"><a href="#6、然后一路下一步就完成安装过程" class="headerlink" title="6、然后一路下一步就完成安装过程"></a>6、然后一路下一步就完成安装过程</h3><h2 id="Oracle创建新用户"><a href="#Oracle创建新用户" class="headerlink" title="Oracle创建新用户"></a>Oracle创建新用户</h2><h3 id="1、运行cmd"><a href="#1、运行cmd" class="headerlink" title="1、运行cmd"></a>1、运行cmd</h3><blockquote><p>打开plsql 登录-&gt; 用户名：system 密码：a</p></blockquote><h3 id="2、新建用户"><a href="#2、新建用户" class="headerlink" title="2、新建用户"></a>2、新建用户</h3><pre><code>create user username identified by password;</code></pre><blockquote><p>username：新建用户的用户名<br>password: 新建用户的密码</p></blockquote><h3 id="3、给用户授权"><a href="#3、给用户授权" class="headerlink" title="3、给用户授权"></a>3、给用户授权</h3><pre><code>grant connect,dba to username;</code></pre>]]></content>
       
       
       
         <tags>
             
-            <tag> 安装教程 </tag>
+            <tag> 教程 </tag>
             
         </tags>
       
