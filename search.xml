@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="utf-8"?>
+<search> 
+  
+  
+    
+    <entry>
+      <title>win10 安装 dosBox</title>
+      <link href="2020/11/03/installDosbox/"/>
+      <url>2020/11/03/installDosbox/</url>
+      
+        <content type="html"><![CDATA[<h3 id="安装dosBox"><a href="#安装dosBox" class="headerlink" title="安装dosBox"></a>安装dosBox</h3><h5 id="下载-dosBox-0-74-3"><a href="#下载-dosBox-0-74-3" class="headerlink" title="下载 dosBox 0.74-3"></a>下载 dosBox 0.74-3</h5><p>前往<a href="https://www.dosbox.com/">官网</a>下载<br>官网打不开的使用我分享的文件： <a href="https://cloud.189.cn/t/32mARz36f2am">doxBox0.74-3</a></p><h5 id="双击打开安装程序-选择-Next"><a href="#双击打开安装程序-选择-Next" class="headerlink" title="双击打开安装程序 选择   Next"></a>双击打开安装程序 选择   Next</h5><p><img src="https://cdn.jsdelivr.net/gh/shizuwei99/resources/dosBoxInstallation/1.png"></p><p>继续Next</p><h5 id="选择安装目录"><a href="#选择安装目录" class="headerlink" title="选择安装目录"></a>选择安装目录</h5><p>我是安装在 D:\IDE\dosBox</p><p><img src="https://cdn.jsdelivr.net/gh/shizuwei99/resources/dosBoxInstallation/2.png"></p><p>下载<a href="https://cloud.189.cn/t/MNRrayii2Yvm">MASM</a> 解压到 dos安装目录</p><p><img src="https://cdn.jsdelivr.net/gh/shizuwei99/resources/dosBoxInstallation/7.png"></p><h5 id="完成安装"><a href="#完成安装" class="headerlink" title="完成安装"></a>完成安装</h5><p><img src="https://cdn.jsdelivr.net/gh/shizuwei99/resources/dosBoxInstallation/3.png"></p><h3 id="配置dosBox"><a href="#配置dosBox" class="headerlink" title="配置dosBox"></a>配置dosBox</h3><h5 id="在开始菜单找到-dosbox-0-74-3-options-文件-双击打开"><a href="#在开始菜单找到-dosbox-0-74-3-options-文件-双击打开" class="headerlink" title="在开始菜单找到 dosbox 0.74-3 options 文件 双击打开"></a>在开始菜单找到 dosbox 0.74-3 options 文件 双击打开</h5><p><img src="https://cdn.jsdelivr.net/gh/shizuwei99/resources/dosBoxInstallation/4.png"></p><h5 id="将-sdl-里面的内容修改成以下内容"><a href="#将-sdl-里面的内容修改成以下内容" class="headerlink" title="将 [sdl] 里面的内容修改成以下内容"></a>将 [sdl] 里面的内容修改成以下内容</h5><blockquote><p>fullscreen=false<br>fulldouble=false<br>fullresolution=original<br>windowresolution=1024x640<br>output=opengl<br>autolock=true<br>sensitivity=100<br>waitonerror=true<br>priority=higher,normal<br>mapperfile=mapper-0.74-3.map<br>usescancodes=true</p></blockquote><p><img src="https://cdn.jsdelivr.net/gh/shizuwei99/resources/dosBoxInstallation/5.png"></p><h5 id="滑到文本末尾，添加以下代码"><a href="#滑到文本末尾，添加以下代码" class="headerlink" title="滑到文本末尾，添加以下代码"></a>滑到文本末尾，添加以下代码</h5><blockquote><p>mount c (MASM文件夹的绝对路径) 我的是 D:\IDE\dosBox\MASM</p></blockquote><p><img src="https://cdn.jsdelivr.net/gh/shizuwei99/resources/dosBoxInstallation/6.png"></p><h5 id="配置完成"><a href="#配置完成" class="headerlink" title="配置完成"></a>配置完成</h5><h3 id="用汇编语言实现3-4"><a href="#用汇编语言实现3-4" class="headerlink" title="用汇编语言实现3+4"></a>用汇编语言实现3+4</h3><h5 id="打开桌面快捷方式-输入命令"><a href="#打开桌面快捷方式-输入命令" class="headerlink" title="打开桌面快捷方式 输入命令"></a>打开桌面快捷方式 输入命令</h5><blockquote><p>c:  (输完回车)<br>debug    (输完回车)<br>r    (输完回车)</p></blockquote><p><img src="https://cdn.jsdelivr.net/gh/shizuwei99/resources/dosBoxInstallation/8.png"></p><blockquote><p>a    (输完回车)<br>MOV AX,3    (输完回车)<br>MOV BX,4    (输完回车)<br>ADD AX,BX    (输完回车)<br>再输入两个空格 按回车</p></blockquote><p><img src="https://cdn.jsdelivr.net/gh/shizuwei99/resources/dosBoxInstallation/9.png"></p><p>三次连续输入T 回车 单步执行<br><img src="https://cdn.jsdelivr.net/gh/shizuwei99/resources/dosBoxInstallation/10.png"></p><h5 id="测试完成"><a href="#测试完成" class="headerlink" title="测试完成"></a>测试完成</h5>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> installation </tag>
+            
+            <tag> study </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>Android Studio 安装</title>
+      <link href="2020/11/03/installAndorid/"/>
+      <url>2020/11/03/installAndorid/</url>
+      
+        <content type="html"><![CDATA[<p><a href="https://developer.android.com/studio">Android Studio官网（4.1）</a></p><p><img src="https://cdn.jsdelivr.net/gh/shizuwei99/resources/androidInstallation//1.png"></p><p>选择安装路径</p><p><img src="https://cdn.jsdelivr.net/gh/shizuwei99/resources@1.0.0/androidInstallation//2.png"></p><p>导入设置：默认勾选 Do not import –&gt; OK</p><p><img src="https://cdn.jsdelivr.net/gh/shizuwei99/resources@1.0.0/androidInstallation//3.png"></p><p>数据分享：默认不发送  –&gt; Don’t send<br><img src="https://cdn.jsdelivr.net/gh/shizuwei99/resources@1.0.0/androidInstallation//4.png"></p><p>设置代理：没有  –&gt; Cancel<br><img src="https://cdn.jsdelivr.net/gh/shizuwei99/resources@1.0.0/androidInstallation//5.png"></p><p>来到welcome页面  –&gt; Next<br><img src="https://cdn.jsdelivr.net/gh/shizuwei99/resources@1.0.0/androidInstallation//6.png"></p><p>安装类型： 默认 Standard –&gt;Next<br><img src="https://cdn.jsdelivr.net/gh/shizuwei99/resources@1.0.0/androidInstallation//7.png"></p><p>选择主题： 个人喜欢暗黑   –&gt;Next<br><img src="https://cdn.jsdelivr.net/gh/shizuwei99/resources@1.0.0/androidInstallation//8.png"></p><p>等待下载完成    Finish<br><img src="https://cdn.jsdelivr.net/gh/shizuwei99/resources@1.0.0/androidInstallation//9.png"></p><p>创建一个新项目  Create New Project<br><img src="https://cdn.jsdelivr.net/gh/shizuwei99/resources@1.0.0/androidInstallation//10.png"></p><p>Empty Activity –&gt; Next<br><img src="https://cdn.jsdelivr.net/gh/shizuwei99/resources@1.0.0/androidInstallation//11.png"></p><p>配置项目信息  – &gt; Finish<br><img src="https://cdn.jsdelivr.net/gh/shizuwei99/resources@1.0.0/androidInstallation//12.png"></p><p>等待出现页面就关掉Android Studio<br><img src="https://cdn.jsdelivr.net/gh/shizuwei99/resources@1.0.0/androidInstallation//14.png"><br>下载<a href="https://services.gradle.org/distributions/">gradle-6.5-bin.zip</a> </p><p>下载完成不要解压 放入目录：C:\Users\Administrator.gradle\wrapper\dists\gradle-6.5-bin\6nifqtx7604sqp1q6g8wikw7p<br><img src="https://cdn.jsdelivr.net/gh/shizuwei99/resources@1.0.0/androidInstallation//13.png"></p><p>重新打开Android Studio 会下载很多文件，等待下载完成<br><img src="https://cdn.jsdelivr.net/gh/shizuwei99/resources@1.0.0/androidInstallation//15.png"></p><p>更改SDK安装路径</p><p>首先找到SDK的安装目录，一般默认是在C:\Users\用户名\AppData\Local\Android\sdk文件夹中。然后将SDK文件剪切到任意目录下，然后启动AS，打开 File -&gt; Other Settings -&gt; Default Project Structure，可以看到Android SDK location，将SDK新路径的绝对路径粘贴进去，然后点击Apply即可。<br><img src="https://cdn.jsdelivr.net/gh/shizuwei99/resources@1.0.0/androidInstallation//16.png"></p>]]></content>
+      
+      
+      <categories>
+          
+          <category> college </category>
+          
+          <category> environment </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> installation </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>配置 Maven</title>
+      <link href="2020/11/03/maven/"/>
+      <url>2020/11/03/maven/</url>
+      
+        <content type="html"><![CDATA[<h3 id="设置本机存放资源目录位置"><a href="#设置本机存放资源目录位置" class="headerlink" title="设置本机存放资源目录位置"></a>设置本机存放资源目录位置</h3><h5 id="1-1-修改maven的配置文件，maven安装目录-conf-settings-xml"><a href="#1-1-修改maven的配置文件，maven安装目录-conf-settings-xml" class="headerlink" title="1.1 修改maven的配置文件，maven安装目录/conf/settings.xml"></a>1.1 修改maven的配置文件，maven安装目录/conf/settings.xml</h5><p>先备份setting.xml</p><h5 id="1-2-修改local-maven-repository-指定目录-不要使用中文目录"><a href="#1-2-修改local-maven-repository-指定目录-不要使用中文目录" class="headerlink" title="1.2 修改local/maven_repository 指定目录(不要使用中文目录)"></a>1.2 修改local/maven_repository 指定目录(不要使用中文目录)</h5><pre><code>&lt;localRepository&gt;F:/Maven_repository&lt;localRepository&gt;</code></pre><p><img src="https://cdn.jsdelivr.net/gh/shizuwei99/resources@1.0.0/maven/maven1.png"></p><h3 id="idea中设置maven"><a href="#idea中设置maven" class="headerlink" title="idea中设置maven"></a>idea中设置maven</h3><h5 id="2-1-idea中内置了maven"><a href="#2-1-idea中内置了maven" class="headerlink" title="2.1 idea中内置了maven"></a>2.1 idea中内置了maven</h5><p>一般不使用内置的，因为用内置修改maven的设置不方便<br>使用自己安装的maven，需要覆盖idea中的默认的设置，让idea指定maven安装位置等信息</p><h5 id="2-2-配置以后新建工程的设置-以下配置idea版本为：2020-2-2"><a href="#2-2-配置以后新建工程的设置-以下配置idea版本为：2020-2-2" class="headerlink" title="2.2 配置以后新建工程的设置 以下配置idea版本为：2020.2.2"></a>2.2 配置以后新建工程的设置 以下配置idea版本为：2020.2.2</h5><p><img src="https://cdn.jsdelivr.net/gh/shizuwei99/resources@1.0.0/maven/maven2.png"><br>Build–&gt;Biuld Tools–&gt;Maven</p><pre><code>Maven home directory: D:\Environment\apache-maven-3.3.9User settings file: D:\Environment\apache-maven-3.3.9\conf\settings.xmllocal_repository: F:\Maven_repository</code></pre><p><img src="https://cdn.jsdelivr.net/gh/shizuwei99/resources@1.0.0/maven/maven3.png"><br>Build–&gt;Biuld Tools–&gt;Maven–&gt;Runner<br>JRE :指定JDK<br><img src="https://cdn.jsdelivr.net/gh/shizuwei99/resources@1.0.0/maven/maven4.png"></p>]]></content>
+      
+      
+      <categories>
+          
+          <category> college </category>
+          
+          <category> environment </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> study </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>Oracle11g 卸载</title>
+      <link href="2020/11/03/uninstallOracle/"/>
+      <url>2020/11/03/uninstallOracle/</url>
+      
+        <content type="html"><![CDATA[<h4 id="1-停用oracle服务："><a href="#1-停用oracle服务：" class="headerlink" title="1 停用oracle服务："></a>1 停用oracle服务：</h4><blockquote><p>进入计算机管理，在服务中，找到oracle开头的所有服务，右击选择停止</p></blockquote><h4 id="2-卸载oracle产品"><a href="#2-卸载oracle产品" class="headerlink" title="2 卸载oracle产品"></a>2 卸载oracle产品</h4><blockquote><p>在开始菜单中，找到Universal Installer，运行Oracle Universal Installer，单击卸载产品<br>在产品清单窗口中，单击全部展开，除了OraDb11g_home1外，勾选其他项目，单击删除</p></blockquote><h4 id="3-删除注册表"><a href="#3-删除注册表" class="headerlink" title="3 删除注册表"></a>3 删除注册表</h4><p>运行 输入regedit，打开注册表</p><blockquote><p>依次展开HKEY_LOCAL_MACHINE\SOFTWARE，找到oracle，删除<br>依次展开HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services中，删除所有oracle开头的项<br>依次展开HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\Eventlog\Application<br>删除所有oracle开头的项<br>在HKEY_CLASSES_ROOT，删除以ora开头的项</p></blockquote><h4 id="4-重启电脑"><a href="#4-重启电脑" class="headerlink" title="4 重启电脑"></a>4 重启电脑</h4><blockquote><p>删除 C:\Program Files\oracle 目录</p></blockquote><h4 id="5-Oracle11g到此就卸载完成"><a href="#5-Oracle11g到此就卸载完成" class="headerlink" title="5 Oracle11g到此就卸载完成"></a>5 Oracle11g到此就卸载完成</h4>]]></content>
+      
+      
+      <categories>
+          
+          <category> college </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> uninstallation </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>Oracle11g 安装</title>
+      <link href="2020/11/03/installOracle/"/>
+      <url>2020/11/03/installOracle/</url>
+      
+        <content type="html"><![CDATA[<h2 id="Oracle-11g-安装"><a href="#Oracle-11g-安装" class="headerlink" title="Oracle 11g 安装"></a>Oracle 11g 安装</h2><p>没有下载Oracle11g点击链接前往下载<br><a href="https://www.oracle.com/database/technologies/112010-win64soft.html" target="_blank">Oracle 11g</a></p><h4 id="1-1-下载两个压缩包"><a href="#1-1-下载两个压缩包" class="headerlink" title="1.1 下载两个压缩包"></a>1.1 下载两个压缩包</h4><p><img src="https://cdn.jsdelivr.net/gh/shizuwei99/resources@1.0.0/oracleInstall/zip.png"><br>选中这两个压缩包（如果下载不在磁盘不连续，按住ctrl 键 用鼠标点击 就可以把两个压缩包选中了）右键 解压到当前目录<br><img src="https://cdn.jsdelivr.net/gh/shizuwei99/resources@1.0.0/oracleInstall/unzip.jpg"></p><h4 id="1-2-解压到当前目录会自动生成一个database文件夹，打开这个文件夹，双击-setup"><a href="#1-2-解压到当前目录会自动生成一个database文件夹，打开这个文件夹，双击-setup" class="headerlink" title="1.2 解压到当前目录会自动生成一个database文件夹，打开这个文件夹，双击 setup"></a>1.2 解压到当前目录会自动生成一个database文件夹，打开这个文件夹，双击 setup</h4><p><img src="https://cdn.jsdelivr.net/gh/shizuwei99/resources@1.0.0/oracleInstall/setup.png"><br>会弹窗你的环境不满足最低要求，是否继续，选择“是”<br>在“配置安全更新”页面，电子邮件可写可不写，并取消勾选安全更新选项，然后点击下一步</p><h4 id="1-3-创建和配置数据库-下一步"><a href="#1-3-创建和配置数据库-下一步" class="headerlink" title="1.3 创建和配置数据库-下一步"></a>1.3 创建和配置数据库-下一步</h4><h4 id="1-4-桌面类-下一步"><a href="#1-4-桌面类-下一步" class="headerlink" title="1.4 桌面类-下一步"></a>1.4 桌面类-下一步</h4><h4 id="1-5-全局数据库名改为oracle"><a href="#1-5-全局数据库名改为oracle" class="headerlink" title="1.5 全局数据库名改为oracle"></a>1.5 全局数据库名改为oracle</h4><p>管理口令设置简单一点  eg：a</p><h4 id="1-6-一路下一步就完成安装过程"><a href="#1-6-一路下一步就完成安装过程" class="headerlink" title="1.6 一路下一步就完成安装过程"></a>1.6 一路下一步就完成安装过程</h4><h2 id="Oracle创建新用户"><a href="#Oracle创建新用户" class="headerlink" title="Oracle创建新用户"></a>Oracle创建新用户</h2><h4 id="2-1-运行cmd"><a href="#2-1-运行cmd" class="headerlink" title="2.1 运行cmd"></a>2.1 运行cmd</h4><blockquote><p>打开plsql 登录-&gt; 用户名：system 密码：a</p></blockquote><h4 id="2-2-新建用户"><a href="#2-2-新建用户" class="headerlink" title="2.2 新建用户"></a>2.2 新建用户</h4><pre><code>create user username identified by password;</code></pre><blockquote><p>username：新建用户的用户名<br>password: 新建用户的密码</p></blockquote><h4 id="2-3-给用户授权"><a href="#2-3-给用户授权" class="headerlink" title="2.3 给用户授权"></a>2.3 给用户授权</h4><pre><code>grant connect,dba to username;</code></pre><p><a href="https://shizuwei99.github.io/resources/Oracle11gInstall.docx">Oracle11g安装Word文档</a></p>]]></content>
+      
+      
+      <categories>
+          
+          <category> college </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> installation </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>Git 学习及使用</title>
+      <link href="2020/11/03/useGit/"/>
+      <url>2020/11/03/useGit/</url>
+      
+        <content type="html"><![CDATA[<h3 id="Git-基本操作"><a href="#Git-基本操作" class="headerlink" title="Git 基本操作"></a>Git 基本操作</h3><p>Git 的工作就是创建和保存你项目的快照及与之后的快照进行对比。</p><p>本章将对有关创建与提交你的项目快照的命令作介绍。</p><p>Git 常用的是以下 6 个命令：git clone、git push、git add 、git commit、git checkout、git pull<br><img src="https://cdn.jsdelivr.net/gh/shizuwei99/resources@1.0.0/useGit/git1.jpg"></p><p><strong>说明</strong></p><ul><li>workspace：工作区</li><li>staging area：暂存区/缓存区</li><li>local repository：本地仓库</li><li>remote repository：远程仓库</li></ul><p>一个简单的操作步骤：</p><blockquote><p>git init<br> git add .<br> git commit  </p></blockquote><ul><li>git init - 初始化仓库。</li><li>git add . - 添加文件到暂存区。</li><li>git commit -将暂存区内容添加到仓库中。</li></ul><h4 id="创建仓库命令"><a href="#创建仓库命令" class="headerlink" title="创建仓库命令"></a>创建仓库命令</h4><blockquote><p>git init : 初始化仓库<br>git clone :拷贝一份远程仓库，也就是下载一个项目</p></blockquote><h4 id="提交与修改"><a href="#提交与修改" class="headerlink" title="提交与修改"></a>提交与修改</h4><p>Git 的工作就是创建和保存你的项目的快照及与之后的快照进行对比。<br>以下列出了有关创建与提交你的项目的快照的命令：</p><blockquote><p>git add : 添加文件到仓库<br>git status : 查看仓库当前的装填，显示有变更的文件<br>git diff : 比较文件的不同，即暂存区和工作区的差异<br>git commit : 提交暂存区到本地仓库<br>git reset : 回退版本<br>giit rm : 删除工作区文件<br>git mv : 移动或重命名工作区文件</p></blockquote><h4 id="提交日志"><a href="#提交日志" class="headerlink" title="提交日志"></a>提交日志</h4><blockquote><p>git log : 查看历史提交记录<br>git blame<file> ：以列表形式查看指定文件的历史修改记录</p></blockquote><h4 id="远程操作"><a href="#远程操作" class="headerlink" title="远程操作"></a>远程操作</h4><blockquote><p>git remote ：远程仓库操作<br>git fetch :从远程获取代码库<br>git pull : 下载远程代码并合并<br>git push : 上传远程代码并合并</p></blockquote><h3 id="Git版本控制Demo"><a href="#Git版本控制Demo" class="headerlink" title="Git版本控制Demo"></a>Git版本控制Demo</h3><p>安装Git以后，在F盘根目录下右键–&gt;Git bush here<br>依次执行以下命令：</p><pre><code>mkdir gitCodecd gitCodegit inittouch test.txt</code></pre><p>第一步：使用命令添加到暂存区里面去。如下：</p><pre><code>git add readme.txt</code></pre><p><img src="https://cdn.jsdelivr.net/gh/shizuwei99/resources@1.0.0/useGit/git2.png"></p><p>没有任何提示，说明已经添加成功了。</p><p>第二步：用命令 git commit告诉Git，把文件提交到仓库。</p><pre><code>git commit</code></pre><p><img src="https://cdn.jsdelivr.net/gh/shizuwei99/resources@1.0.0/useGit/git3.png"></p><p>第三步：打开test.txt 文本文件，随意添加内容<br><img src="https://cdn.jsdelivr.net/gh/shizuwei99/resources@1.0.0/useGit/git4.png"></p><p>第四步：将修改过的文件提交到仓库</p><pre><code>git add .git commit -m &quot;v1.0&quot;</code></pre><p><img src="https://cdn.jsdelivr.net/gh/shizuwei99/resources@1.0.0/useGit/git5.png"></p><p>第五部：查看版本记录</p><pre><code>git log</code></pre><p><img src="https://cdn.jsdelivr.net/gh/shizuwei99/resources@1.0.0/useGit/git6.png"></p><p>第六步：选择回退的版本 这里选择版本号为：3e039b7 的</p><pre><code>git reset --hard 3e039b7</code></pre><p>此时打开test.txt文件应该是没有内容的<br><img src="https://cdn.jsdelivr.net/gh/shizuwei99/resources@1.0.0/useGit/git7.png"></p><p>如果是回退到上一个版本，还可以用命令：</p><pre><code>git reset --hard HEAD^</code></pre>]]></content>
+      
+      
+      <categories>
+          
+          <category> college </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> study </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>shortcutKey</title>
+      <link href="2020/11/03/shortcutKey/"/>
+      <url>2020/11/03/shortcutKey/</url>
+      
+        <content type="html"><![CDATA[<p><img src="https://cdn.jsdelivr.net/gh/shizuwei99/resources@1.0.0/shortcutKey/idea1.png"><br>其中的英文说明来自于 idea 的官网资料，中文说明主要来自于自己的领会和理解，英文说明只是作为参考。重要的快捷键会附带图示，进行详细的说明。</p><p>每一部分会先列出所有的快捷键说明表，如果有不清楚的地方，再看后续的图示详解。</p><h3 id="编辑-Editing"><a href="#编辑-Editing" class="headerlink" title="编辑 [Editing]"></a>编辑 [Editing]</h3><table><thead><tr><th>快捷键</th><th>英文说明</th><th>中文说明</th></tr></thead><tbody><tr><td>Ctrl + Space</td><td>Basic code completion (the name of any class, method or variable)</td><td>补全代码，由于经常与操作系统的输入法的切换冲突，所以实际很少用。一般直接在 idea 中开启输入自动补全机制。</td></tr><tr><td>Ctrl + Shift + Space</td><td>Smart code completion (filters the list of methods and variables by expected type</td><td>在列出的可选项中只显示出你所输入的关键字最相关的信息。（常用）</td></tr><tr><td>Ctrl + Shift + Enter</td><td>Complete statement</td><td>代码补全后，自动在代码末尾添加分号结束符</td></tr><tr><td>Ctrl + P</td><td>Parameter info (within method call arguments)</td><td>在某个方法中，调用该按键后，会展示出这个方法的调用参数列表信息。</td></tr><tr><td>Ctrl + Q</td><td>Quick documentation lookup</td><td>展示某个类或者方法的 API 说明文档</td></tr><tr><td>Ctrl + mouse</td><td>over code Brief Info</td><td>跳进到某个类或者方法源代码中进行查看。（常用）</td></tr><tr><td>Alt + Insert</td><td>Generate code… (Getters, Setters, Constructors, hashCode/equals, toString)</td><td>自动生成某个类的 Getters, Setters, Constructors, hashCode/equals, toString 等代码。（常用）</td></tr><tr><td>Ctrl + O</td><td>Override methods</td><td>展示该类中所有覆盖或者实现的方法列表，注意这里是字母小写的 O！</td></tr><tr><td>Ctrl + Alt + T</td><td>Surround with… (if…else,try…catch, for, synchronized, etc.)</td><td>自动生成具有环绕性质的代码，比如：if…else,try…catch, for, synchronized 等等，使用前要先选择好需要环绕的代码块。（常用）</td></tr><tr><td>Ctrl + Alt + L</td><td>Reformat code</td><td>格式化代码 （常用）</td></tr><tr><td>Ctrl + Alt + O</td><td>Optimize imports</td><td>去除没有实际用到的包，这在 java 类中特别有用。（常用）</td></tr><tr><td>Tab / Shift + Tab</td><td>Indent/unindent selected lines</td><td>缩进或者不缩进一次所选择的代码段。（常用）</td></tr><tr><td>Ctrl + Y</td><td>Delete line at caret</td><td>删除当前光标所在的代码行。（常用）</td></tr><tr><td>Ctrl + Shift + J</td><td>Smart line join</td><td>把下一行的代码接续到当前的代码行。</td></tr><tr><td>Ctrl + Enter</td><td>Smart line split</td><td>当前代码行与下一行代码之间插入一个空行，原来所在的光标不变。（常用）</td></tr><tr><td>Shift + Enter</td><td>Start new line</td><td>当前代码行与下一行代码之间插入一个空行，原来光标现在处于新加的空行上。（常用）</td></tr><tr><td>Ctrl + Shift + U</td><td>Toggle case for word at caret or selected block</td><td>所选择的内容进行大小写转换。。（常用）</td></tr><tr><td>Ctrl + Shift + ]/[</td><td>Select till code block end/start</td><td>从当前光标所在位置开始，一直选择到当前光标所在代码段起始或者结束位置。</td></tr><tr><td>Ctrl + NumPad(+/-)</td><td>Expand/collapse code block</td><td>展开或收缩代码段。 （常用）</td></tr><tr><td>Shift + F6</td><td>Rename</td><td>修改名字。（常用）</td></tr></tbody></table><h3 id="1-1-Ctrl-P-实例-方法参数列表"><a href="#1-1-Ctrl-P-实例-方法参数列表" class="headerlink" title="1.1 Ctrl + P 实例(方法参数列表)"></a>1.1 Ctrl + P 实例(方法参数列表)</h3><p><img src="https://cdn.jsdelivr.net/gh/shizuwei99/resources@1.0.0/shortcutKey/idea2.png"></p><h3 id="1-2-Alt-Insert-示例（自动生成与类相关的代码）"><a href="#1-2-Alt-Insert-示例（自动生成与类相关的代码）" class="headerlink" title="1.2 Alt + Insert 示例（自动生成与类相关的代码）"></a>1.2 Alt + Insert 示例（自动生成与类相关的代码）</h3><p><img src="https://cdn.jsdelivr.net/gh/shizuwei99/resources@1.0.0/shortcutKey/idea3.png"></p><p>更多请前往    <a href="https://blog.csdn.net/deniro_li/article/details/72902621"><strong>博客</strong></a></p>]]></content>
+      
+      
+      <categories>
+          
+          <category> college </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> usage </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>计科常用资源</title>
+      <link href="2020/11/03/note/"/>
+      <url>2020/11/03/note/</url>
+      
+        <content type="html"><![CDATA[<h2 id="Environment"><a href="#Environment" class="headerlink" title="Environment"></a>Environment</h2><h4 id="1-1-JDK"><a href="#1-1-JDK" class="headerlink" title="1.1 JDK"></a>1.1 <a href="https://www.oracle.com/java/technologies/javase/javase-jdk8-downloads.html" target="_blank">JDK</a></h4><blockquote><p>系统变量新建<br>    Java_Home<br>    D:\Environment\Java    –jdk绝对路径<br>    CLASSPATH<br>    .;%JAVA_HOME%\lib\dt.jar;%JAVA_HOME%\lib\tools.jar;<br>path中添加两条:<br>    %JAVA_HOME%\bin<br>    %JAVA_HOME%\jre\bin</p></blockquote><h4 id="1-2-Maven（访问码：sd8l）"><a href="#1-2-Maven（访问码：sd8l）" class="headerlink" title="1.2 Maven（访问码：sd8l）"></a>1.2 <a href="https://cloud.189.cn/t/ryY7j27r6Njy" target="_blank">Maven</a>（访问码：sd8l）</h4><blockquote><p>新建系统变量:<br>    M2_HOME<br>    D:\Environment\apache-maven-3.3.9-bin\apache-maven-3.3.9</p></blockquote><h4 id="1-3-Oracle-11g"><a href="#1-3-Oracle-11g" class="headerlink" title="1.3 Oracle 11g"></a>1.3 <a href="https://www.oracle.com/database/technologies/112010-win64soft.html" target="_blank">Oracle 11g</a></h4><h2 id="IDE"><a href="#IDE" class="headerlink" title="IDE"></a>IDE</h2><h4 id="2-1-Oracle图形管理工具"><a href="#2-1-Oracle图形管理工具" class="headerlink" title="2.1 Oracle图形管理工具"></a>2.1 Oracle图形管理工具</h4><p><a herf="https://cloud.189.cn/t/YNFFB3NZZRBj" >Plsql Developer</a>（访问码：sgr6）<br>plsql developer 激活码:</p><blockquote><p>ke4tv8t5jtxz493kl8s2nn3t6xgngcmgf3<br>serial Number: 264452<br>password: xs374ca</p></blockquote><h4 id="2-2-IntelliJ-IDEA-Ultimate2020-2-2-（访问码：u1eq）"><a href="#2-2-IntelliJ-IDEA-Ultimate2020-2-2-（访问码：u1eq）" class="headerlink" title="2.2 IntelliJ IDEA Ultimate2020.2.2 （访问码：u1eq）"></a>2.2 <a href="https://www.jetbrains.com/idea/download/other.html">IntelliJ IDEA Ultimate2020.2.2</a> （访问码：u1eq）</h4><p>破解工具:<a href="https://cloud.189.cn/t/amEZN3ErqqUz" target="_blank">JetBrains2020全家桶破解工具</a>（访问码：u1eq）</p><h2 id="Software"><a href="#Software" class="headerlink" title="Software"></a>Software</h2><h4 id="3-1-Ediplus（访问码：peh9）"><a href="#3-1-Ediplus（访问码：peh9）" class="headerlink" title="3.1 Ediplus（访问码：peh9）"></a>3.1 <a href="https://cloud.189.cn/t/jy2ENrMBJB7f" target="_blank">Ediplus</a>（访问码：peh9）</h4><blockquote><p>注册名：zzidc<br>    注册码：11276-E9720-D59E6-BD0E0-2965C</p></blockquote><h4 id="3-2-百度网盘破解工具"><a href="#3-2-百度网盘破解工具" class="headerlink" title="3.2 百度网盘破解工具"></a>3.2 百度网盘破解工具</h4><p><a href="https://kinhdown.kinh.cc/" target="_blank">KinhDown</a></p><h4 id="3-3-数电模拟工具"><a href="#3-3-数电模拟工具" class="headerlink" title="3.3 数电模拟工具"></a>3.3 数电模拟工具</h4><p><a href="https://cloud.189.cn/t/7jquQ3QBRFBf" target="_blank">Protues8.6</a>（访问码：u6u5）</p><h4 id="3-4-按键精灵（访问码：4oey）"><a href="#3-4-按键精灵（访问码：4oey）" class="headerlink" title="3.4 按键精灵（访问码：4oey）"></a>3.4 <a href="https://cloud.189.cn/t/FniMRznYf6j2" target="_blank">按键精灵</a>（访问码：4oey）</h4><h4 id="3-5-Windows远程工具"><a href="#3-5-Windows远程工具" class="headerlink" title="3.5 Windows远程工具"></a>3.5 Windows远程工具</h4><p><a href="https://cloud.189.cn/t/URZFZbbIZni2" target="_blank">TeamViewer</a>（访问码：l9et）</p><h3 id="3-6、Windows科学上网工具"><a href="#3-6、Windows科学上网工具" class="headerlink" title="3.6、Windows科学上网工具"></a>3.6、Windows科学上网工具</h3><p><a href="https://cloud.189.cn/t/VZZZjuNRZfQr" target="_blank">Clash</a>（访问码：f44o）</p><h4 id="3-7-Adobe-Photoshop-CC-2019"><a href="#3-7-Adobe-Photoshop-CC-2019" class="headerlink" title="3.7 Adobe Photoshop CC 2019"></a>3.7 <a href="https://cloud.189.cn/t/6bEnyyeu6Fru" target="_blank">Adobe Photoshop CC 2019</a></h4><p>破解工具:<a href="https://cloud.189.cn/t/nEfMj2jmARfi" target="_blank">adobe.photoshop.cc.2019.20.0.0-patch</a>内含教程</p><h4 id="3-8-Windows截图工具"><a href="#3-8-Windows截图工具" class="headerlink" title="3.8 Windows截图工具"></a>3.8 Windows截图工具</h4><p><a href="https://cloud.189.cn/t/jiaq2qYZV3Qn" target="_blank">Snipaste</a></p><h4 id="3-9Sql-Server2008R2"><a href="#3-9Sql-Server2008R2" class="headerlink" title="3.9Sql Server2008R2"></a>3.9<a href="https://cloud.189.cn/t/iamInaABBZna">Sql Server2008R2</a></h4><h4 id="3-10Mac鼠标指针"><a href="#3-10Mac鼠标指针" class="headerlink" title="3.10Mac鼠标指针"></a>3.10<a href="https://cloud.189.cn/t/aAzyMjBB77Zv">Mac鼠标指针</a></h4><h2 id="SoftTools"><a href="#SoftTools" class="headerlink" title="SoftTools"></a>SoftTools</h2><h4 id="4-1-Git（访问码：2lo6）"><a href="#4-1-Git（访问码：2lo6）" class="headerlink" title="4.1 Git（访问码：2lo6）"></a>4.1 <a href="https://cloud.189.cn/t/Jb2u2aMVzq6b" target="_blank">Git</a>（访问码：2lo6）</h4><h4 id="4-2-Node-jsv14"><a href="#4-2-Node-jsv14" class="headerlink" title="4.2 Node.jsv14"></a>4.2 <a href="https://cloud.189.cn/t/AJ3ERnQ3EJrm" target="_blank">Node.jsv14</a></h4>]]></content>
+      
+      
+      <categories>
+          
+          <category> college </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> resources </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>国干脚本</title>
+      <link href="2020/11/03/guogan/"/>
+      <url>2020/11/03/guogan/</url>
+      
+        <content type="html"><![CDATA[<p>==========以下是按键精灵录制的内容==========<br>MoveTo 1651, 1319<br>LeftClick 1<br>Delay 800<br>MoveTo 1146, 607<br>LeftClick 1<br>MoveTo 1162, 636<br>LeftClick 1</p><p>‘==========以下是按键精灵录制的内容==========<br>MoveTo 1211, 648<br>LeftClick 1</p><p>MoveTo 1366, 824<br>LeftClick 1</p><p>MoveTo 1497, 642<br>LeftClick 1</p><p>MoveTo 1779, 837<br>LeftClick 1</p><p>‘==========以上是按键精灵录制的内容==========</p><p>MoveTo 1247, 688<br>LeftClick 1<br>MoveTo 1181, 718<br>LeftClick 1<br>MoveTo 1469, 689<br>LeftClick 1<br>MoveTo 1471, 719<br>LeftClick 1<br>MoveTo 1242, 718<br>LeftClick 1<br>SayString “冯运东”<br>KeyPress “Tab”, 1<br>SayString “史光友”</p><p>‘==========以上是按键精灵录制的内容==========<br>‘==========以下是按键精灵录制的内容==========<br>MoveTo 1291, 820<br>LeftDoubleClick 1<br>Delay 400<br>SayString “有树枝”<br>Delay 400<br>KeyPress “Tab”, 1<br>Delay 400<br>SayString “清除”<br>Delay 400</p><p>//‘==========以下是按键精灵录制的内容==========<br>MoveTo 1324, 855<br>LeftDoubleClick 1</p><p>//‘==========以上是按键精灵录制的内容==========</p><p>Delay 1000<br>SayString “有泥沙”<br>Delay 400<br>KeyPress “Tab”, 1<br>Delay 400<br>SayString “清除”<br>Delay 400<br>//‘==========以下是按键精灵录制的内容==========<br>MoveTo 1313, 1051<br>LeftClick 1<br>Delay 400<br>MoveTo 1296, 794<br>LeftClick 1</p>]]></content>
+      
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>chrome下载文件检测到病毒解决办法</title>
+      <link href="2020/11/03/chrome/"/>
+      <url>2020/11/03/chrome/</url>
+      
+        <content type="html"><![CDATA[<p>运行 regedit.exe<br>顺着这个<br>注册表地址HKEY_LOCAL_MACHINE\Software\Microsoft\Windows\CurrentVersion\Policies\Attachments<br>找到这个<br>ScanWithAntiVirus—右键—-修改 为1<br><img src="https://cdn.jsdelivr.net/gh/shizuwei99/resources@1.0.0/chrome/aa.jpg"><br>问题解决，完美！</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> pc </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> solutions </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+  
+  
+</search>
