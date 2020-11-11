@@ -383,7 +383,7 @@
 </ol>
 <h4 id="1-1-2-微处理器的基本组成"><a href="#1-1-2-微处理器的基本组成" class="headerlink" title="1.1.2 微处理器的基本组成"></a>1.1.2 微处理器的基本组成</h4><p>从早期的微处理器看，它主要包括运算器和控制器两大部分。随着大规模集成电路技术的快速发展，</p>
 <p>目前CPU内部最基本的组成部分为三大部分，即运算器、控制器和高速缓冲存储器。</p>
-<h5 id="1-运算器："><a href="#1-运算器：" class="headerlink" title="1. 运算器："></a>1. 运算器：</h5><p>p35 图3-1</p>
+<h5 id="1-运算器："><a href="#1-运算器：" class="headerlink" title="1. 运算器："></a>1. 运算器：</h5><p><img src="https://cdn.jsdelivr.net/gh/shizuwei99/resources@master/courseMicorcomputer/5.png"></p>
 <p>AX,BX,CX,DX CPU中的寄存器</p>
 <p>ALU：算数逻辑部件</p>
 <p>C1，C2 ：操作信号，相当于开关</p>
@@ -391,7 +391,8 @@
 <p>！！！    数据不能两个都来自内存中。</p>
 <h5 id="2-高速缓冲存储器"><a href="#2-高速缓冲存储器" class="headerlink" title="2. 高速缓冲存储器"></a>2. 高速缓冲存储器</h5><p>由于CPU的速度远大于内存的速度，所以使用cache，将CPU所需要的数据提前从内存读入cache中，</p>
 <p>使得CPU在近期一段时间片段不需要访问内存，而是只需访问CPU内部的高速缓冲存储器，称其为<br>访问CPU内部cache的 <strong><u>命中率</u></strong> 很高</p>
-<h5 id="3-控制器"><a href="#3-控制器" class="headerlink" title="3. 控制器"></a>3. 控制器</h5><p>控制器最基本的部件由指令指针，指令寄存器，指令译码器及操作控制器组成。</p>
+<h5 id="3-控制器"><a href="#3-控制器" class="headerlink" title="3. 控制器"></a>3. 控制器</h5><p><img src="https://cdn.jsdelivr.net/gh/shizuwei99/resources@master/courseMicorcomputer/6.png"></p>
+<p>控制器最基本的部件由指令指针，指令寄存器，指令译码器及操作控制器组成。</p>
 <p>为什么会CPU会顺序执行：</p>
 <p>指令指针中存放存储器地址，为了保证程序顺序执行，CPU必须自动记忆下一条指令存放在内存中</p>
 <p>的地址，所以指令指针又称为指令计数器，他有 <u><strong>自动加一</strong></u> 功能</p>
