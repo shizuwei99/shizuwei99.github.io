@@ -467,15 +467,13 @@
 <p>段基地址：偏移地址</p>
 <p>物理地址的计算公式：</p>
 <p>​            物理地址=段基地址x16+偏移地址</p>
-<h4 id="1-3-2-段寄存器与偏移地址寄存器的固定搭配"><a href="#1-3-2-段寄存器与偏移地址寄存器的固定搭配" class="headerlink" title="1.3.2 段寄存器与偏移地址寄存器的固定搭配"></a>1.3.2 段寄存器与偏移地址寄存器的固定搭配</h4><p>CS:IP ———&gt;代码段</p>
-<p>DS:SI /DI/BX———&gt;数据段</p>
-<p>SS:SP/BP——–&gt;堆栈段</p>
+<h4 id="1-3-2-段寄存器与偏移地址寄存器的固定搭配"><a href="#1-3-2-段寄存器与偏移地址寄存器的固定搭配" class="headerlink" title="1.3.2 段寄存器与偏移地址寄存器的固定搭配"></a>1.3.2 段寄存器与偏移地址寄存器的固定搭配</h4><p><img src="https://cdn.jsdelivr.net/gh/shizuwei99/resources@master/courseMicorcomputer/2.png" alt="2"></p>
 <p>总结：除了SP,BP,CS 其余的都跟数据段搭配</p>
 <hr>
 <h3 id="1-4-8086系统中的存储器组织"><a href="#1-4-8086系统中的存储器组织" class="headerlink" title="1.4 8086系统中的存储器组织"></a>1.4 8086系统中的存储器组织</h3><p>在8086系统中，把1MB的存储器分为两个存储体，偶地址存储体和奇地址存储体，其存储容量</p>
 <p>各位512KB，在每个存储体内的字节地址是不连续的，而在两个存储体之间的字节地址是连续</p>
 <p>的，构成了两个存储体之间的地址交叉，如图：</p>
-<p><img src="https://cdn.jsdelivr.net/gh/shizuwei99/resources@v1.0.2/courseMicorcomputer/1.jpg"></p>
+<p><img src="https://cdn.jsdelivr.net/gh/shizuwei99/resources@master/courseMicorcomputer/3.png"></p>
 <p>BHE 和A0的组合操作</p>
 <table>
 <thead>
@@ -506,7 +504,74 @@
 <td align="center">无</td>
 </tr>
 </tbody></table>
-<p>1.5  Pentium微处理器的总线周期</p>
+<hr>
+<h2 id="第二章-指令系统与汇编语言程序设计"><a href="#第二章-指令系统与汇编语言程序设计" class="headerlink" title="第二章  指令系统与汇编语言程序设计"></a>第二章  指令系统与汇编语言程序设计</h2><h3 id="1-1-1-指令一般格式"><a href="#1-1-1-指令一般格式" class="headerlink" title="1.1.1  指令一般格式"></a>1.1.1  指令一般格式</h3><h4 id="1-8086CPU指令的格式"><a href="#1-8086CPU指令的格式" class="headerlink" title="1. 8086CPU指令的格式"></a>1. 8086CPU指令的格式</h4><blockquote>
+<p>操作码        操作数</p>
+</blockquote>
+<p>例如：指令    MOV AL,29H</p>
+<p>8086CPU指令的格式可以细分为以下几种：</p>
+<ol>
+<li><p>零地址指令</p>
+<p>格式：操作码</p>
+<p>零地址指令中不提供操作数，也不提供操作数的地址，只有操作码，例如 空操作指令 </p>
+<blockquote>
+<p>NOP</p>
+</blockquote>
+</li>
+<li><p>单地址指令</p>
+<p>格式：操作码    操作数</p>
+<p>单地址指令也成为一般地址指令，指令中之提供一个操作数（或一个操作数的地址），例如：</p>
+<blockquote>
+<p>INC    AH</p>
+<p>INC    BYTE PTR[1100H]</p>
+</blockquote>
+</li>
+<li><p>两地址指令</p>
+<p>格式：操作码    目的操作数，源操作数</p>
+<p>指令中包含两个操作数，由操作码确定这两个操作数所进行的操作后，结果存入目的操作数中。例如：</p>
+<blockquote>
+<p>MOV AH,BL        ;AH&lt;——(BL)</p>
+<p>MOV BH,[1100H]        ;BH&lt;——(1100H)</p>
+</blockquote>
+<p>说明：</p>
+<ol>
+<li><p>目的操作数和源操作数应具有相同的数据类型，即必须同时是8位或者16位。</p>
+</li>
+<li><p>目的操作数不能是立即数。</p>
+</li>
+<li><p>操作结束后，其操作结果送入目的操作数中，而源操作数并不会改变。</p>
+</li>
+<li><p>源操作数和目的操作数不能同时为存储器操作数，例如：</p>
+<blockquote>
+<p>ADD [BX],[2000H]</p>
+</blockquote>
+</li>
+<li><p>立即数不能作为目的操作数。</p>
+</li>
+</ol>
+</li>
+</ol>
+<h4 id="2-操作数的类型"><a href="#2-操作数的类型" class="headerlink" title="2.  操作数的类型"></a>2.  操作数的类型</h4><ol>
+<li><p>数据操作数</p>
+<ol>
+<li><p>立即操作数<br>imm，代表8 、16位立即数</p>
+<p>immn：n（n为8或16）位立即操作数</p>
+</li>
+<li><p>寄存器操作数</p>
+<p>reg：寄存器，代表8和16位</p>
+<p>regn：n（n为8或16）位寄存器</p>
+</li>
+<li><p>存储器操作数</p>
+<p>mem：存储器操作数，</p>
+<p>memn：n（n为8或16）位存储器操作数</p>
+</li>
+<li><p>输入/输出操作数</p>
+</li>
+</ol>
+</li>
+<li><p>转移地址操作数</p>
+</li>
+</ol>
 
             </div>
             <hr/>
