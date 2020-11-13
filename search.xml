@@ -4,6 +4,27 @@
   
     
     <entry>
+      <title>win10 安装Visual Studio 2015</title>
+      <link href="2020/11/13/installVS2015/"/>
+      <url>2020/11/13/installVS2015/</url>
+      
+        <content type="html"><![CDATA[<h2 id=""><a href="#" class="headerlink" title=""></a></h2><h2 id="1、下载安装包"><a href="#1、下载安装包" class="headerlink" title="1、下载安装包"></a>1、下载安装包</h2><p>复制磁力链接，打开迅雷，下载安装包，没有迅雷的先安装迅雷。</p><blockquote><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ed2k:&#x2F;&#x2F;|file|cn_visual_studio_enterprise_2015_x86_x64_dvd_6846222.iso|4172560384|E558149A422E9FBF7D1D37FB0A2F1F53|&#x2F;</span><br></pre></td></tr></table></figure></blockquote><h2 id="2、下载完成后打开，双击VS-enterprise"><a href="#2、下载完成后打开，双击VS-enterprise" class="headerlink" title="2、下载完成后打开，双击VS_enterprise"></a>2、下载完成后打开，双击VS_enterprise</h2><p><img src="https://cdn.jsdelivr.net/gh/shizuwei99/resources@master/installVS2015/1.png"></p><h2 id="3、选择安装位置后，单击安装"><a href="#3、选择安装位置后，单击安装" class="headerlink" title="3、选择安装位置后，单击安装"></a>3、选择安装位置后，单击安装</h2><p><img src="https://cdn.jsdelivr.net/gh/shizuwei99/resources@master/installVS2015/2.png"></p><h2 id="4、等待安装"><a href="#4、等待安装" class="headerlink" title="4、等待安装"></a>4、等待安装</h2><p><img src="https://cdn.jsdelivr.net/gh/shizuwei99/resources@master/installVS2015/3.png"></p><h2 id="5、安装完成"><a href="#5、安装完成" class="headerlink" title="5、安装完成"></a>5、安装完成</h2><p><img src="https://cdn.jsdelivr.net/gh/shizuwei99/resources@master/installVS2015/4.png"></p><h2 id="6、说明"><a href="#6、说明" class="headerlink" title="6、说明"></a>6、说明</h2><p> 如果出错，请尝试用以下方式解决</p><p><img src="https://cdn.jsdelivr.net/gh/shizuwei99/resources@master/installVS2015/5.png"></p><p><img src="https://cdn.jsdelivr.net/gh/shizuwei99/resources@master/installVS2015/6.png"></p>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> study </tag>
+            
+            <tag> installation </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>微机原理及应用学习记录</title>
       <link href="2020/11/03/courseMicorcomputer/"/>
       <url>2020/11/03/courseMicorcomputer/</url>
