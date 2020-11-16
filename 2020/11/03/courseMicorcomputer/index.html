@@ -643,7 +643,7 @@
 <p>OPDn：n（n为8或16）位目的操作数</p>
 <p>seg：段寄存器 （segment）</p>
 <p>（reg）：表示寄存器中寄存的数值</p>
-<h4 id="1-2-1-数据传送指令"><a href="#1-2-1-数据传送指令" class="headerlink" title="1.2.1  数据传送指令"></a>1.2.1  数据传送指令</h4><p>数据传送指令是将数据、地址或立即数传送到寄存器或存储器中，可以分为一般<strong>数据传送指令</strong>、堆栈操作指令、地址传送指令和<strong>输入 /输出指令</strong></p>
+<h4 id="1-2-1-数据传送指令"><a href="#1-2-1-数据传送指令" class="headerlink" title="1.2.1  数据传送指令"></a>1.2.1  数据传送指令</h4><h5 id="1-一般数据传送指令"><a href="#1-一般数据传送指令" class="headerlink" title="1.一般数据传送指令"></a>1.一般数据传送指令</h5><p>数据传送指令是将数据、地址或立即数传送到寄存器或存储器中，可以分为一般<strong>数据传送指令</strong>、堆栈操作指令、地址传送指令和<strong>输入 /输出指令</strong></p>
 <ol>
 <li><p>传送指令</p>
 <p>指令格式： MOV OPD,OPS</p>
@@ -669,7 +669,158 @@
 </ol>
 <p>说明：当段寄存器作为目的操作数时，不允许是CS和SS段寄存器，但所有段寄存器都可以作为源操作数</p>
 </li>
+<li><p>数据交换指令</p>
+<p>指令格式：XCHG OPD,OPS</p>
+<p>XCHG一般有如下三种格式：</p>
+<blockquote>
+<p>XCHG  reg,reg              XCHG  AL,AH</p>
+<p>XCHG  reg,mem            XCHG  AL,[BX]</p>
+<p>XCHG  mem,reg            XCHG  [1000H],BX</p>
+</blockquote>
+</li>
 </ol>
+<h5 id="2-堆栈操作指令"><a href="#2-堆栈操作指令" class="headerlink" title="2.堆栈操作指令"></a>2.堆栈操作指令</h5><p>堆栈是在内存RAM这种开辟的一段特殊的存储空间。它的主要功能包括：</p>
+<ol>
+<li>用来暂时存放程序的（断电）地址（CS和IP的值）。</li>
+<li>用以临时存放CPU寄存器和存储器中暂时不用的数据        （寄存器不够用）</li>
+</ol>
+<p>堆栈操作指令：</p>
+<ol>
+<li><p>数据入栈指令</p>
+<p>指令格式：PUSH OPS16</p>
+<p>将OPS中的16位数据压入堆栈中，且堆栈指针SP中的值减2，PUSH一般有两种形式：</p>
+<ol>
+<li>PUSH reg16</li>
+<li>PUSH mem16</li>
+</ol>
+</li>
+<li><p>数据出栈指令</p>
+<p>指令格式： POP OPD16</p>
+<p>将SS：IP所指定的一个字弹出给某一16位通用寄存器、数据段寄存器或某一字存储单元中。OPS一定是16位，弹出栈的数据也是16位，POP OPD16指令执行后，SP加2。</p>
+<p>POP一般有三种形式：</p>
+<ol>
+<li>POP reg16</li>
+<li>POP seg</li>
+<li>POP mem16</li>
+</ol>
+<p>注：<strong>高字节存放高地址、低字节存放低地址</strong></p>
+</li>
+<li><p>地址传送指令</p>
+<ol>
+<li><p>传送偏移地址</p>
+<p>指令格式： LEA reg16，OPS</p>
+</li>
+</ol>
+<p>说明：（1）目的操作数一定是一个16通用寄存器。</p>
+<p>（2）OPS 所提供的一定要是内存的一个偏移地址，可以是存储器的各种寻址方式。例如：</p>
+<blockquote>
+<p>​    LEA BX,[SI+2]</p>
+</blockquote>
+<p>(3)OPS通常是变量名，取其偏移地址到reg16中。例如：</p>
+<blockquote>
+<p>LEA SI,VAR</p>
+</blockquote>
+</li>
+<li><p>输入/输出指令</p>
+<p>输入 /输出设备接口电路中有三种类型的寄存器  此处寄存器跟前面所指寄存器并不同    每一个设备寄存器都在I/O空间中被指定一个固定地址</p>
+<ol>
+<li><p>基本输入指令</p>
+<blockquote>
+<p>IN AL,DX</p>
+</blockquote>
+<p>通常用作查询状态，数据采集</p>
+</li>
+<li><p>基本输出指令</p>
+<blockquote>
+<p>OUT DX,AL</p>
+</blockquote>
+<p>给300H发数据80H</p>
+<blockquote>
+<p>MOV AL,80H</p>
+<p>MOV DX,300H</p>
+<p>OUT DX,AL</p>
+</blockquote>
+</li>
+</ol>
+</li>
+</ol>
+<h4 id="1-2-2-算数运算指令"><a href="#1-2-2-算数运算指令" class="headerlink" title="1.2.2    算数运算指令"></a>1.2.2    算数运算指令</h4><h5 id="1-加法指令"><a href="#1-加法指令" class="headerlink" title="1.加法指令"></a>1.加法指令</h5><ol>
+<li><p>不带进位的加法指令</p>
+<p>指令格式： ADD OPD,OPS</p>
+<p>ADD有以下5种形式：</p>
+<blockquote>
+<p>ADD reg，reg</p>
+<p>ADD reg，mem</p>
+<p>ADD mem，reg</p>
+<p>ADD reg，imm</p>
+<p>ADD imm，reg        例：ADD WORD PTR[1000H],2233H</p>
+</blockquote>
+</li>
+<li><p>带进位的加法指令</p>
+<p>指令格式：ADC OPD,OPS</p>
+</li>
+</ol>
+<h5 id="2-减法指令"><a href="#2-减法指令" class="headerlink" title="2.减法指令"></a>2.减法指令</h5><ol>
+<li><p>不带借位减法指令</p>
+<p>指令格式：SUB OPD,OPS</p>
+</li>
+<li><p>带借位减法指令</p>
+<p>指令格式： SBB OPD,OPS</p>
+</li>
+<li><p>减1指令</p>
+<p>指令格式：DEC OPD</p>
+<p>DEC有两种形式：</p>
+<blockquote>
+<p>DEC reg</p>
+<p>DEC mem        DEC WORD PTR[DI]</p>
+</blockquote>
+<p>例：求1-100的累加和</p>
+<blockquote>
+<p>MOV AX,0</p>
+<p>MOV CX=64</p>
+<p>ABC:ADD AX,CX</p>
+<p>DEC CX</p>
+<p>JNZ ABC</p>
+</blockquote>
+</li>
+<li><p>比较指令</p>
+<p>指令格式：CMP OPD,OPS;    (OPD)-(OPS)</p>
+</li>
+</ol>
+<h5 id="3-乘法指令"><a href="#3-乘法指令" class="headerlink" title="3.乘法指令"></a>3.乘法指令</h5><ol>
+<li><p>无符号的乘法指令</p>
+<p>指令格式：MUL OPS</p>
+<p>字节乘法： AX&lt;—-(AL)*(OPS8)</p>
+<p>字乘法：  DX:AX&lt;—-(AX)*(OPS16)</p>
+</li>
+<li><p>带符号数乘法指令</p>
+<p>指令格式：IMUL OPS</p>
+<p>字节乘法： AX&lt;—-(AL)*(OPS8)</p>
+<p>字乘法：  DX:AX&lt;—-(AX)*(OPS16)</p>
+</li>
+</ol>
+<h5 id="4-除法指令"><a href="#4-除法指令" class="headerlink" title="4.除法指令"></a>4.除法指令</h5><ol>
+<li><p>无符号的除法法指令</p>
+<p>指令格式：DIV OPS</p>
+<p>字节除法： (AX)/(OPS8)        商—-&gt;AL,余数—-&gt;AH</p>
+<p>字除法：  DX:AX/(OPS16)</p>
+</li>
+<li><p>带符号数除法指令</p>
+<p>指令格式：IDIV OPS</p>
+<p>字节除法： (AX)/(OPS8)        商—-&gt;AL,余数—-&gt;AH</p>
+<p>字除法：  DX:AX/(OPS16)</p>
+</li>
+</ol>
+<h4 id="1-2-3逻辑运算"><a href="#1-2-3逻辑运算" class="headerlink" title="1.2.3逻辑运算"></a>1.2.3逻辑运算</h4><h5 id="1-求补指令"><a href="#1-求补指令" class="headerlink" title="1.求补指令"></a>1.求补指令</h5><p>指令格式：NEG OPD</p>
+<p>将OPD中的内容逐位取反，且末尾加一后送入OPD中</p>
+<h5 id="2-求反指令"><a href="#2-求反指令" class="headerlink" title="2.求反指令"></a>2.求反指令</h5><p>指令格式：NOT OPD</p>
+<p>将OPD中的内容逐位取反后，送入OPD中</p>
+<h5 id="3-逻辑与指令"><a href="#3-逻辑与指令" class="headerlink" title="3.逻辑与指令"></a>3.逻辑与指令</h5><p>指令格式：AND OPD,OPS        OPD&lt;—-OPD^OPS</p>
+<h5 id="4-逻辑测试指令"><a href="#4-逻辑测试指令" class="headerlink" title="4.逻辑测试指令"></a>4.逻辑测试指令</h5><p>指令格式： TEST OPD,OPS        OPS^OPD</p>
+<p>注：用来查询状态</p>
+<h5 id="5-逻辑或指令"><a href="#5-逻辑或指令" class="headerlink" title="5.逻辑或指令"></a>5.逻辑或指令</h5><p>指令格式：OR OPD,OPS        OPD&lt;—-OPDvOPS</p>
+<h5 id="6-逻辑异或指令"><a href="#6-逻辑异或指令" class="headerlink" title="6.逻辑异或指令"></a>6.逻辑异或指令</h5><p>指令格式： XOR OPD,OPS    </p>
+<p>1⊕1=0，0⊕0=0，0⊕1=1</p>
 
             </div>
             <hr/>
@@ -962,12 +1113,12 @@ ed2k://|file|cn_visual_studio_enterprise_2015_x86_x64_dvd_684
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/study/">
-                        <span class="chip bg-color">study</span>
-                    </a>
-                    
                     <a href="/tags/installation/">
                         <span class="chip bg-color">installation</span>
+                    </a>
+                    
+                    <a href="/tags/study/">
+                        <span class="chip bg-color">study</span>
                     </a>
                     
                 </div>
@@ -1015,12 +1166,12 @@ ed2k://|file|cn_visual_studio_enterprise_2015_x86_x64_dvd_684
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/study/">
-                        <span class="chip bg-color">study</span>
-                    </a>
-                    
                     <a href="/tags/installation/">
                         <span class="chip bg-color">installation</span>
+                    </a>
+                    
+                    <a href="/tags/study/">
+                        <span class="chip bg-color">study</span>
                     </a>
                     
                 </div>
