@@ -4,31 +4,6 @@
   
     
     <entry>
-      <title>win10 彻底关闭杀毒软件</title>
-      <link href="2020/11/19/windowsDefender/"/>
-      <url>2020/11/19/windowsDefender/</url>
-      
-        <content type="html"><![CDATA[<h2 id="win10家庭版"><a href="#win10家庭版" class="headerlink" title="win10家庭版"></a>win10家庭版</h2><p>1、打开windows+R组合键打开运行，输入regedit回车后打开注册表</p><p><img src="https://cdn.jsdelivr.net/gh/shizuwei99/resources/windowsDefender/3.png"></p><p>2、打开注册表找到HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\SecurityHealthService，如下图所示</p><p> <img src="https://cdn.jsdelivr.net/gh/shizuwei99/resources/windowsDefender/1.png"></p><p>3、找到“Start”并右键点击，然后选择“修改”，将“数值数据”处的3修改成4，然后点击确定，然后关闭注册表。操作图片步骤如下</p><p><img src="https://cdn.jsdelivr.net/gh/shizuwei99/resources/windowsDefender/2.png"></p><h2 id="win10-专业版"><a href="#win10-专业版" class="headerlink" title="win10 专业版"></a>win10 专业版</h2><p>1、打开windows+R组合键打开运行，输入gpedit.msc 回车后打开本地组策略编辑器</p><p><img src="https://cdn.jsdelivr.net/gh/shizuwei99/resources/windowsDefender/4.png"></p><p>2、打开计算机配置-管理模板-windows组件-Windows Defender 防病毒程序</p><p>在右侧找到 关闭windows Defender 防病毒程序 右键，选择更改</p><p>将已禁用改为已启用</p><p><img src="https://cdn.jsdelivr.net/gh/shizuwei99/resources/windowsDefender/5.png"></p><p>3、在windows Defender 防病毒程序子项中找到 实时保护，在右侧选择关闭实时保护</p><p>右键，选择更改，将已禁用改为已启用</p><p><img src="https://cdn.jsdelivr.net/gh/shizuwei99/resources/windowsDefender/6.png"></p>]]></content>
-      
-      
-      <categories>
-          
-          <category> pc </category>
-          
-      </categories>
-      
-      
-        <tags>
-            
-            <tag> solutions </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
       <title>win10 安装Visual Studio 2015</title>
       <link href="2020/11/13/installVS2015/"/>
       <url>2020/11/13/installVS2015/</url>
@@ -73,6 +48,31 @@
         <tags>
             
             <tag> study </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>win10 彻底关闭杀毒软件</title>
+      <link href="2020/11/03/windowsDefender/"/>
+      <url>2020/11/03/windowsDefender/</url>
+      
+        <content type="html"><![CDATA[<h2 id="win10家庭版"><a href="#win10家庭版" class="headerlink" title="win10家庭版"></a>win10家庭版</h2><p>1、打开windows+R组合键打开运行，输入regedit回车后打开注册表</p><p><img src="https://cdn.jsdelivr.net/gh/shizuwei99/resources/windowsDefender/3.png"></p><p>2、打开注册表找到HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\SecurityHealthService，如下图所示</p><p> <img src="https://cdn.jsdelivr.net/gh/shizuwei99/resources/windowsDefender/1.png"></p><p>3、找到“Start”并右键点击，然后选择“修改”，将“数值数据”处的3修改成4，然后点击确定，然后关闭注册表。操作图片步骤如下</p><p><img src="https://cdn.jsdelivr.net/gh/shizuwei99/resources/windowsDefender/2.png"></p><h2 id="win10-专业版"><a href="#win10-专业版" class="headerlink" title="win10 专业版"></a>win10 专业版</h2><p>1、打开windows+R组合键打开运行，输入gpedit.msc 回车后打开本地组策略编辑器</p><p><img src="https://cdn.jsdelivr.net/gh/shizuwei99/resources/windowsDefender/4.png"></p><p>2、打开计算机配置-管理模板-windows组件-Windows Defender 防病毒程序</p><p>在右侧找到 关闭windows Defender 防病毒程序 右键，选择更改</p><p>将已禁用改为已启用</p><p><img src="https://cdn.jsdelivr.net/gh/shizuwei99/resources/windowsDefender/5.png"></p><p>3、在windows Defender 防病毒程序子项中找到 实时保护，在右侧选择关闭实时保护</p><p>右键，选择更改，将已禁用改为已启用</p><p><img src="https://cdn.jsdelivr.net/gh/shizuwei99/resources/windowsDefender/6.png"></p>]]></content>
+      
+      
+      <categories>
+          
+          <category> pc </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> solutions </tag>
             
         </tags>
       
