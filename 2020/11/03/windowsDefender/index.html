@@ -365,12 +365,16 @@
         <hr class="clearfix">
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h2 id="win10家庭版"><a href="#win10家庭版" class="headerlink" title="win10家庭版"></a>win10家庭版</h2><p>1、打开windows+R组合键打开运行，输入regedit回车后打开注册表</p>
+                <h2 id="win10家庭版"><a href="#win10家庭版" class="headerlink" title="win10家庭版"></a>win10家庭版</h2><h3 id="方法一："><a href="#方法一：" class="headerlink" title="方法一："></a>方法一：</h3><p>1、打开windows+R组合键打开运行，输入regedit回车后打开注册表</p>
 <p><img src="https://cdn.jsdelivr.net/gh/shizuwei99/resources/windowsDefender/3.png"></p>
-<p>2、打开注册表找到HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\SecurityHealthService，如下图所示</p>
+<p>2、打开注册表找到</p>
+<pre><code>HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\SecurityHealthService</code></pre>
+<p>如下图所示</p>
 <p> <img src="https://cdn.jsdelivr.net/gh/shizuwei99/resources/windowsDefender/1.png"></p>
 <p>3、找到“Start”并右键点击，然后选择“修改”，将“数值数据”处的3修改成4，然后点击确定，然后关闭注册表。操作图片步骤如下</p>
 <p><img src="https://cdn.jsdelivr.net/gh/shizuwei99/resources/windowsDefender/2.png"></p>
+<h3 id="方法二："><a href="#方法二：" class="headerlink" title="方法二："></a>方法二：</h3><p>以管理员身份运行 CMD,输入：</p>
+<pre><code>reg add &quot;HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows Defender&quot; /v &quot;DisableAntiSpyware&quot; /d 1 /t REG_DWORD</code></pre>
 <h2 id="win10-专业版"><a href="#win10-专业版" class="headerlink" title="win10 专业版"></a>win10 专业版</h2><p>1、打开windows+R组合键打开运行，输入gpedit.msc 回车后打开本地组策略编辑器</p>
 <p><img src="https://cdn.jsdelivr.net/gh/shizuwei99/resources/windowsDefender/4.png"></p>
 <p>2、打开计算机配置-管理模板-windows组件-Windows Defender 防病毒程序</p>
@@ -729,12 +733,12 @@
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/study/">
-                        <span class="chip bg-color">study</span>
-                    </a>
-                    
                     <a href="/tags/installation/">
                         <span class="chip bg-color">installation</span>
+                    </a>
+                    
+                    <a href="/tags/study/">
+                        <span class="chip bg-color">study</span>
                     </a>
                     
                 </div>
