@@ -455,17 +455,17 @@
 <hr>
 <h6 id="汇编语言采用减法计数"><a href="#汇编语言采用减法计数" class="headerlink" title="汇编语言采用减法计数"></a>汇编语言采用减法计数</h6><p>INC AL    INC:increase</p>
 <p>DEC BH    DEC:decrease</p>
-<h3 id="1-3-用汇编语言实现-3-4"><a href="#1-3-用汇编语言实现-3-4" class="headerlink" title="1.3 用汇编语言实现 3 + 4"></a>1.3 用汇编语言实现 3 + 4</h3><p>打开 dosbox  输入命令</p>
-<blockquote>
-<p>c:  (输完回车)<br>debug    (输完回车)<br>r    (输完回车)</p>
-</blockquote>
-<p><img src="https://cdn.jsdelivr.net/gh/shizuwei99/resources/installDosbox/8.png"></p>
-<blockquote>
-<p>a    (输完回车)<br>MOV AX,3    (输完回车)<br>MOV BX,4    (输完回车)<br>ADD AX,BX    (输完回车)<br>再输入两个空格 按回车</p>
-</blockquote>
-<p><img src="https://cdn.jsdelivr.net/gh/shizuwei99/resources/installDosbox/9.png"></p>
-<p>三次连续输入T 回车 单步执行</p>
-<h3 id="1-3-微处理器对存储器的管理"><a href="#1-3-微处理器对存储器的管理" class="headerlink" title="1.3  微处理器对存储器的管理"></a>1.3  微处理器对存储器的管理</h3><h4 id="1-3-1-实模式存储器地址空间的划分"><a href="#1-3-1-实模式存储器地址空间的划分" class="headerlink" title="1.3.1 实模式存储器地址空间的划分"></a>1.3.1 实模式存储器地址空间的划分</h4><p>从00000H~003FFH是中断向量表去，共计有1024字节，1024/4=256 ，用于存放</p>
+<h3 id="1-3-用汇编语言实现-3-4"><a href="#1-3-用汇编语言实现-3-4" class="headerlink" title="1.3 用汇编语言实现 3 + 4"></a>1.3 用汇编语言实现 3 + 4</h3><h5 id="打开桌面快捷方式-输入命令"><a href="#打开桌面快捷方式-输入命令" class="headerlink" title="打开桌面快捷方式 输入命令"></a>打开桌面快捷方式 输入命令</h5><pre><code>DEBUG    ;(输完回车)
+R    ;(输完回车)</code></pre>
+<p><img src="https://cdn.jsdelivr.net/gh/shizuwei99/resources/installDosbox/12.png"></p>
+<pre><code>a    ;(输完回车)
+MOV AX,3    ;(输完回车)
+MOV BX,4    ;(输完回车)
+ADD AX,BX    ;(输完回车)</code></pre>
+<p> 最后直接回车</p>
+<p><img src="https://cdn.jsdelivr.net/gh/shizuwei99/resources@master/installDosbox/13.png"></p>
+<p>三次连续输入T 回车 单步执行<br><img src="https://cdn.jsdelivr.net/gh/shizuwei99/resources@master/installDosbox/10.png"></p>
+<h5 id="测试完成"><a href="#测试完成" class="headerlink" title="测试完成"></a>测试完成</h5><h3 id="1-3-微处理器对存储器的管理"><a href="#1-3-微处理器对存储器的管理" class="headerlink" title="1.3  微处理器对存储器的管理"></a>1.3  微处理器对存储器的管理</h3><h4 id="1-3-1-实模式存储器地址空间的划分"><a href="#1-3-1-实模式存储器地址空间的划分" class="headerlink" title="1.3.1 实模式存储器地址空间的划分"></a>1.3.1 实模式存储器地址空间的划分</h4><p>从00000H~003FFH是中断向量表去，共计有1024字节，1024/4=256 ，用于存放</p>
 <p>256个中断向量（中断服务程序的入口地址）—–&gt;CS：IP，即每个中断向量包含4字节：</p>
 <p>2字节的代码段值，2字节的偏移地址</p>
 <h4 id="1-3-2-实模式物理地址的产生"><a href="#1-3-2-实模式物理地址的产生" class="headerlink" title="1.3.2 实模式物理地址的产生"></a>1.3.2 实模式物理地址的产生</h4><p>数据线小于地址线，所以CPU内部的地址加法器，能将16位的逻辑地址装换成</p>
@@ -835,7 +835,7 @@
 <li><p>算数右移</p>
 <p>SAR OPD,1</p>
 <p>SAR OPD,CL</p>
-<p><img src="https://cdn.jsdelivr.net/gh/shizuwei99/resources/courseMicorcomputer/8.PNG"></p>
+<p><img src="https://cdn.jsdelivr.net/gh/shizuwei99/resources/courseMicorcomputer/8.png"></p>
 </li>
 </ol>
 <h5 id="2-逻辑移位指令"><a href="#2-逻辑移位指令" class="headerlink" title="2.逻辑移位指令"></a>2.逻辑移位指令</h5><ol>
@@ -848,7 +848,7 @@
 <p>SHR OPD,CL</p>
 </li>
 </ol>
-<p><img src="https://cdn.jsdelivr.net/gh/shizuwei99/resources/courseMicorcomputer/7.PNG"></p>
+<p><img src="https://cdn.jsdelivr.net/gh/shizuwei99/resources/courseMicorcomputer/7.png"></p>
 <h5 id="3-循环移位"><a href="#3-循环移位" class="headerlink" title="3.循环移位"></a>3.循环移位</h5><ol>
 <li><p>不带进位的循环左移指令</p>
 <p>ROL OPD,1</p>
