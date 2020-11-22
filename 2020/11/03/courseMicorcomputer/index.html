@@ -826,6 +826,40 @@
 <h5 id="5-逻辑或指令"><a href="#5-逻辑或指令" class="headerlink" title="5.逻辑或指令"></a>5.逻辑或指令</h5><p>指令格式：OR OPD,OPS        OPD&lt;—-OPDvOPS</p>
 <h5 id="6-逻辑异或指令"><a href="#6-逻辑异或指令" class="headerlink" title="6.逻辑异或指令"></a>6.逻辑异或指令</h5><p>指令格式： XOR OPD,OPS    </p>
 <p>1⊕1=0，0⊕0=0，0⊕1=1</p>
+<h4 id="1-2-4-移位指令"><a href="#1-2-4-移位指令" class="headerlink" title="1.2.4  移位指令"></a>1.2.4  移位指令</h4><h5 id="1-算术移位指令"><a href="#1-算术移位指令" class="headerlink" title="1. 算术移位指令"></a>1. 算术移位指令</h5><ol>
+<li><p>算数左移</p>
+<p>SAL OPD,1</p>
+<p>SAL OPD,CL</p>
+<p>这两条指令的差别是当移位次数为1时，可以直接使用SAL OPD,1指令，当移位次数大于1时，必须先将移位次数送入CL中，然后使用SAL OPD,CL指令。</p>
+</li>
+<li><p>算数右移</p>
+<p>SAR OPD,1</p>
+<p>SAR OPD,CL</p>
+<p><img src="https://cdn.jsdelivr.net/gh/shizuwei99/resources/courseMicorcomputer/8.PNG"></p>
+</li>
+</ol>
+<h5 id="2-逻辑移位指令"><a href="#2-逻辑移位指令" class="headerlink" title="2.逻辑移位指令"></a>2.逻辑移位指令</h5><ol>
+<li><p>逻辑左移指令</p>
+<p>SHL OPD,1</p>
+<p>SHL OPD,CL</p>
+</li>
+<li><p>逻辑右移指令</p>
+<p>SHR OPD,1</p>
+<p>SHR OPD,CL</p>
+</li>
+</ol>
+<p><img src="https://cdn.jsdelivr.net/gh/shizuwei99/resources/courseMicorcomputer/7.PNG"></p>
+<h5 id="3-循环移位"><a href="#3-循环移位" class="headerlink" title="3.循环移位"></a>3.循环移位</h5><ol>
+<li><p>不带进位的循环左移指令</p>
+<p>ROL OPD,1</p>
+<p>ROL OPD,CL</p>
+<p>ROL WORD PTR[BX],1         ;内存中临近的两个字节组成一个字循环左移一位</p>
+</li>
+<li><p>不带进位的循环右移指令</p>
+<p>ROR OPD,1</p>
+<p>ROR OPD,CL</p>
+</li>
+</ol>
 
             </div>
             <hr/>
